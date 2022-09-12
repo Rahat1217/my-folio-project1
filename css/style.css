@@ -1,0 +1,326 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.container{
+    width: 1170px;
+    margin:0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.button{
+    width: 196px;
+    height: 48px;
+    background-color: #cfc91d;
+    display: block;
+    margin: auto;
+    font-size: 14px;
+    font-weight: 800;
+    color: #0b1016;
+    text-transform: uppercase;
+    line-height: 48px;
+    text-align: center;
+}
+.button:hover{
+    background-color:#02918c ;
+    border-radius: 10px;
+}
+.align-center{
+    align-items: center;
+
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.icon{
+    font-size: 25px;
+    color: #02918c;
+}
+/*nav bar start here*/
+
+nav{
+    background-color: #02918c;
+}
+nav .logo{
+    width: 30%;
+}
+nav .menu{
+    width: 70%;
+}
+nav .menu ul{
+    text-align: right;
+}
+nav .menu ul li{
+    display: inline-block;
+}
+nav .menu ul li a{
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding:26px 25px;
+    display: block;
+}
+nav .menu ul li:hover a{
+    background-color: yellow;
+    color: black;
+}
+
+/*nav bar ends here */
+/*banner part start here*/
+#banner{
+    height: 730px;
+    background-image: url(../img/banner\ \(1\).jpg);
+    background-color: rgba(0, 0, 0, 0.34);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+}
+#banner .bannercnt{
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+#banner .bannercnt h3{
+    font-weight: 400;
+    font-size: 30px;
+}
+#banner .bannercnt h1{
+    font-weight: 800;
+    font-size: 68px;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+#banner .bannercnt p{
+    font-size: 18px;
+    font-weight: 400;
+}
+#banner .bannercnt img{
+    padding: 50px 0;
+}
+
+#banner .row{
+    height: 730px;
+}
+/*banner part start here*/
+/*About part start here*/
+#abouttow .aboutme{
+    padding: 98px 0;
+}
+.about{
+    color:#02918c;
+    font-size: 46px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+.about::after{
+    content:"";
+    background-image:url(../img/img.png);
+    width: 162px;
+    height: 9px;
+    position: absolute;
+    bottom:-30px;
+    left: 50%;
+   transform: translateX(-50%);
+
+}
+#Abt{
+    padding: 94px 0;
+}
+#abouttow .aboutText{
+    width: 874px;
+  margin: 70px auto 30px auto;
+  text-align: center;
+  color: #7e8287;
+}
+#abouttow .aboutText span{
+    font-size: 23px;
+    font-weight: 800;
+    color: #7e8287;
+}
+#abouttow .aboutcard{
+    width:25%;
+    text-align: center;
+    border-right: 1px solid gray;
+    padding: 40px 0;
+    margin-bottom: 76px;
+}
+.subheading{
+    font-weight: 800;
+    font-size: 16px;
+    color: #7e8287;
+    margin: 25px 0;
+}
+.card2{
+    color: #7e8287;
+    font-size: 11px;
+  font-weight: 400;
+  padding: 0 50px;
+}
+#abouttow .aboutcard:last-child{
+    border: none;
+
+}
+/*About part start here*/
+/* service part start here */
+#service{
+    padding: 73px 0;
+    background-image:url(../img/serviceBG.jpg);
+    background-size:cover;
+    background-position: center;
+}
+.srvs{
+    width: 50%;
+   
+}
+#service .about{
+    text-align: left;
+}
+#service .about::after{
+    left: 0;
+    transform: translateX(0%);
+
+}
+#service p{
+    margin: 53px 0;
+    color: #7e8287;
+    margin-bottom: 20px;
+}
+
+.servicecard{
+    width: 50%;
+    padding: 10px;
+}
+.servicecard p{
+    padding: 0;
+    padding-right:200px;
+}
+
+#mywork .workcard{
+    width: 25%;
+    position: relative;
+}
+#mywork .workcard img{
+    width: 100%;
+    display: block;
+}
+.myworkcnt p{
+    text-align: center;
+    padding: 68px 0;
+  font-weight: 400;
+  font-size: 16px;
+  color: #7e8287;
+ 
+}
+.myworkcnt {
+    padding: 100px 0 70px 0;
+}
+/* service part end here */
+.contact p{
+    text-align: center;
+    padding: 68px 0;
+  font-weight: 400;
+  font-size: 16px;
+  color: #7e8287;
+
+}
+.contact{
+    padding: 100px 0 70px 0;
+} 
+
+
+
+#mywork .workcard .workcardhover {
+    position: absolute;  
+    right: 0;
+    top: 0;
+     background-color: rgba(2, 145, 140, 0.85 );
+     color: white;
+     inset: 20px;
+     text-align: center;
+     padding: 0 18px;
+     opacity: 0;
+     transition: 300ms;
+  
+}
+#mywork .workcard .workcardhover h4{
+    padding: 15px 0;
+}
+#mywork .workcard:hover .workcardhover{
+    opacity: 1;
+}
+#mywork .workcard .workcardhover p{
+    font-weight: 400;
+    font-size: 13px;
+  
+
+}
+.workcardhover .row {
+   
+    height: 100%;
+    
+}
+.workcardhover .row {
+    height: 100%;
+}
+#form { 
+    padding: 68px 0;
+    background-color: #0a0a0b;
+}
+#form .formcnt{
+    width: 640px;
+    margin: auto;
+}
+#form .formcnt input{
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border-bottom:1px solid white ;
+    color: white;
+    margin: 30px 0;
+}
+#form .msg{
+    width: 930px;
+    margin: auto;
+    color: white;
+}
+#form .msg label{
+    display: block;
+    text-align: center;
+}
+#form .msg textarea{
+    width: 100%;
+    height: 94px;
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+   margin-top: 27px;
+}
+#butn{
+    padding: 66px 0;
+}
+.myfolio{
+    padding: 30px 0;
+    background-color:#000000;
+}     
+.myfolio p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    color: #7e8287;
+}
